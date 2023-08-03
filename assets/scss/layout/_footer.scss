@@ -1,0 +1,96 @@
+.footerBox{
+  background: $primary;
+  color: $white;
+  a:hover{
+    color: $warning;
+  }
+}
+
+.footer{
+  @include pad{
+    padding: 0 36px;
+  }
+}
+
+.footer-contactBox{
+  padding-top: 48px;
+  padding-bottom: 32px;
+  justify-content: space-between;
+}
+
+.footer-list{
+  margin-top: 12px;
+  margin-bottom: 45px;
+  li{
+    &:first-child a{
+      padding-left: 0;
+    }
+    a{
+      padding: 0 24px;
+    }
+  }
+  @include phone{
+    display: none;
+  }
+}
+
+.footer-connect{
+  font-size: $font-size-md;
+  @include phone{
+    font-size: $font-size-base;
+  }
+  li{
+    margin-bottom: 8px;
+  }
+}
+
+.material-icons-outlined{
+  font-size: $font-size-md;
+  margin-right: 22px;
+  @include phone{
+    font-size: $font-size-base;
+    margin-right: 11px;
+  }
+}
+
+.footer-right{
+  a{
+    &:last-child img{
+      margin-right: 0;
+    }
+    img{
+      width: 48px;
+      margin: 0 16px;
+      @include phone{
+        width: 24px;
+        margin: 0 4px;
+      }
+    }
+  }
+}
+
+.footer-copyRightBox{
+  border-top: 1px solid $white;
+  padding: 32px 0;
+  @include phone{
+    padding-top: 16px;
+    padding-bottom: 24px;
+    flex-wrap: wrap;
+  }
+  .copyRight-list{
+    &:last-child li{
+      padding-right: 0;
+    }
+    @include phone{
+      flex-wrap: wrap;
+    }
+    li{
+      padding: 0 24px;
+      @include phone{
+        width: 100%;
+        padding: 0;
+        margin-top: 8px;
+      }
+    }
+  }
+}

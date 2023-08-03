@@ -1,0 +1,54 @@
+.headerBox{
+  background: $primary;
+  .header{
+    padding: 16px 0;
+    @include pad{
+      padding: 16px 36px;
+    }
+    @include phone {
+      padding: 0;
+      flex-wrap: wrap;
+    }
+  }
+  .headerLogo{
+    width: 80px;
+    @include phone {
+      margin: 16px;
+    }
+  }
+}
+
+.header-list{
+  align-items: center;
+  @include phone {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  li{
+    @include phone{
+      text-align: center;
+      width: 50%;
+    }
+    &:hover{
+      transform: translateY(0);
+    }
+    a{
+      font-size: $font-size-sm;
+      padding: 25px 32px;
+      &:hover{
+        color: $warning;
+      }
+      &:nth-child(odd){
+        @include phone{
+          border-right: none;
+        }
+      }
+      @include phone{
+        border: 1px solid $white;
+        font-size: $font-size-base;
+        display: block;
+        padding: 12px 0;
+      }
+    }
+  }
+}

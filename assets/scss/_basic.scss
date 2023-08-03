@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp');
+
+@mixin pad{
+  @media(max-width:992px){
+    @content;
+  }
+}
+
+@mixin phone{
+  @media(max-width:767px){
+    @content;
+  }
+}
+
+*,*::after,*::before{
+  box-sizing: border-box;
+}  
+
+body{
+  font-family: 'Noto Sans TC', sans-serif;
+  line-height: 1.5;
+}  
+
+img{
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}  
+
+a{
+  text-decoration:none;
+  color: $white;
+}  
+
+.container{
+  max-width: 1296px;
+  margin: 0 auto;
+  @include pad {
+    max-width: 100%;
+  }
+  @include phone {
+    max-width: 100%;
+  }
+}  
+
+.d-flex{
+  display: flex;
+}  
+
+.flex-column{
+  flex-direction: column;
+}
+
+.justify-content-between{
+  justify-content: space-between;
+}
+
+.justify-content-end{
+  justify-self: end;
+}
+
+.align-items-center{
+  align-items: center;
+}
+
+.align-items-end{
+  align-items: end;
+}
+
+.hover-up li, .hover-up a img{
+  transition: 0.4s;
+  &:hover{
+    transform:
+    translateY(-5px);
+  }
+}
