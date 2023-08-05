@@ -32,8 +32,11 @@
     &:hover{
       transform: translateY(0);
     }
+    &:last-child a{
+      padding-right: 0;
+    }
     a{
-      font-size: $font-size-sm;
+      font-size: $font-size-xs;
       padding: 25px 32px;
       &:hover{
         color: $warning;

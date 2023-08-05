@@ -1,18 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Roboto:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp');
 
-@mixin pad{
-  @media(max-width:992px){
-    @content;
-  }
-}
-
-@mixin phone{
-  @media(max-width:767px){
-    @content;
-  }
-}
-
 *,*::after,*::before{
   box-sizing: border-box;
 }  
@@ -33,14 +21,51 @@ a{
   color: $white;
 }  
 
+h1 {
+  font-size: $font-size-xxl;
+  @include phone {
+    font-size: $font-size-sm;
+  }
+}
+
+h2{
+  font-size: $font-size-lg;
+  @include phone{
+  font-size: $font-size-sm;
+  }
+}
+
+h3{
+  font-size: $font-size-md;
+  color: $primary-dark;
+  @include phone{
+    font-size: $font-size-base;
+  }
+}
+
+h4{
+  font-size: $font-size-sm;
+}
+
+h1, h2, h4{
+  font-weight: bold;
+  color: $primary-dark;
+}
+
 .container{
   max-width: 1296px;
+  padding-left: 12px;
+  padding-right: 12px;
   margin: 0 auto;
   @include pad {
     max-width: 100%;
+    padding-left: 36px;
+    padding-right: 36px;
   }
   @include phone {
     max-width: 100%;
+    padding-left: 14px;
+    padding-right: 14px;
   }
 }  
 
@@ -52,12 +77,16 @@ a{
   flex-direction: column;
 }
 
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
 .justify-content-between{
   justify-content: space-between;
 }
 
 .justify-content-end{
-  justify-self: end;
+  justify-content: end;
 }
 
 .align-items-center{
@@ -68,7 +97,28 @@ a{
   align-items: end;
 }
 
-.hover-up li, .hover-up a img{
+.text-center{
+  text-align: center;
+}
+
+.btn {
+  background: $primary;
+  transition: 0.4s;
+  display: block;
+  &:hover{
+    background: $primary-light;
+    color: $primary-dark;
+  }
+}
+
+.en-font{
+  font-family: $font-eng;
+  font-weight: 900;
+  font-style: italic;
+  color: $primary;
+}
+
+.hover-up li{
   transition: 0.4s;
   &:hover{
     transform:

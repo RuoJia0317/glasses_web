@@ -1,7 +1,8 @@
 // 共用
 @import './helper/reset';
 @import './helper/variable';
-@import './basic';
+@import './helper/mixin';
+@import './base';
 
 // layout
 @import './layout/header.scss';

@@ -54,19 +54,19 @@
 }
 
 .footer-right{
-  a{
-    &:last-child img{
-      margin-right: 0;
-    }
-    img{
-      width: 48px;
-      margin: 0 16px;
-      @include phone{
-        width: 24px;
-        margin: 0 4px;
+    a{
+      &:last-child img{
+        margin-right: 0;
+      }
+      img{
+        width: 48px;
+        margin: 0 16px;
+        @include phone{
+          width: 24px;
+          margin: 0 4px;
+        }
       }
     }
-  }
 }
 
 .footer-copyRightBox{
