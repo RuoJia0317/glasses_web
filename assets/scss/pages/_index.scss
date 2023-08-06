@@ -9,6 +9,10 @@
   .logo_sloganBox{
     text-align: right;
 
+    h1{
+      font-size: $font-size-xxl;
+    }
+
     .sloganBtn{
       padding: 6px 12px;
       margin-top: 4px;

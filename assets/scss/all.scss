@@ -5,8 +5,11 @@
 @import './base';
 
 // layout
-@import './layout/header.scss';
-@import './layout/footer.scss';
+@import './layout/header';
+@import './layout/footer';
 
 // page
-@import './pages/index.scss';
+@import './pages/index';
+@import './pages/faq';
+@import './pages/shop-list';
+@import './pages/shop-info';

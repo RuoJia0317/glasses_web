@@ -1,0 +1,49 @@
+.shopListBox{
+  margin: 0 -12px -48px -12px;
+  @include pad {
+    justify-content: space-between;
+    margin: 0 0 -48px 0;
+  }
+  @include phone {
+    margin-bottom: 0;
+  }
+}
+.shopCardBox{
+  width: calc((100% - (24px * 3)) / 3);
+  margin-right: 12px;
+  margin-left: 12px;
+  margin-bottom: 48px;
+
+  @include pad{
+    margin-left: 0;
+    margin-right: 0;
+    width: calc((100% - 24px) / 2);
+  }
+  @include phone {
+    width: 100%;
+    margin-bottom: 24px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .shopCard{
+
+  }
+  .detailBox{
+    .shopDetail{
+      
+    }
+  }
+  .shopBtn{
+    display: block;
+    background: $black;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-align: center;
+    transition: 0.4s;
+    font-size: calc($font-size-xxs + 1px);
+    &:hover {
+      background: $primary;
+    }
+  }
+}

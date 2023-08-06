@@ -7,6 +7,7 @@ $font-size-lg: $font-size-base * 3; //48px
 $font-size-md: $font-size-base * 2.25; //36px
 $font-size-sm: $font-size-base * 1.5; // 24px
 $font-size-xs: $font-size-base * 1.25; //20px
+$font-size-xxs: $font-size-base * 1.125; //18px
 
 
 //color
@@ -17,6 +18,8 @@ $warning: #fff000;
 $primary : #AA0601;
 $primary-light : #FBF2F2;
 $primary-dark: #650300;
+$primary-border : #9F1213;
 $secondary : #DEE2E6;
 $secondary-trans : #00000029;
 $secondary-dark: #DEE2E6;
+$card-border: #00000020;

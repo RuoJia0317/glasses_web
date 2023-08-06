@@ -1,0 +1,73 @@
+.shopSelectBox{
+  margin-top: 33px;
+  margin-bottom: 40px;
+  @include phone {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+  }
+  .shopSelectLabel{
+    font-size: $font-size-sm;
+    margin-right: 16px;
+    
+    @include phone {
+      font-size: $font-size-base;
+      margin-right: 8px;
+    }
+  }
+  .shopSelect{
+    width: 304px;
+    font-size: $font-size-xxs;
+    padding: 6px 12px;
+    @include phone{
+      width: calc(100% - 72px);
+    }
+  }
+
+}
+
+.shopDetailBox{
+  @include pad{
+    flex-wrap: wrap;
+  }
+  .shopCard{
+    @include pad {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 26px;
+    }
+    @include phone {
+      flex-wrap: wrap;
+    }
+
+    .shopImgBox{
+      width: 526px;
+      @include pad {
+        width: calc((100% - 24px) / 2);
+      }
+      @include phone {
+        width: 100%;
+      }
+    }
+    .detailBox{
+      @include pad{
+        width: calc((100% - 24px) / 2);
+      }
+      @include phone {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.shopMap{
+  width: 746px;
+  height: 414px;
+  @include pad {
+    max-width: 100%;
+  }
+  @include phone {
+    height: 208px;
+  }
+}

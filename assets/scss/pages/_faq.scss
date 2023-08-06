@@ -1,0 +1,28 @@
+.faqBox{
+  max-width: 856px;
+  .faqSecondTitle{
+    font-size: $font-size-sm;
+    margin-top: 32px;
+    color: $black;
+    @include phone {
+      margin-top: 24px;
+    }
+  }
+  .faqList{
+    margin-top: 32px;
+    &:first-child{
+      margin-top: 24px;
+    }
+    @include phone {
+      margin-top: 24px;
+    }
+    h3{
+      font-size: $font-size-xs;
+      color: $black;
+      font-weight: bold;
+    }
+    p{
+      margin-top: 8px;
+    }
+  }
+}

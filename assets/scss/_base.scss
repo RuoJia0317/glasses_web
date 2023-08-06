@@ -22,7 +22,7 @@ a{
 }  
 
 h1 {
-  font-size: $font-size-xxl;
+  font-size: $font-size-lg;
   @include phone {
     font-size: $font-size-sm;
   }
@@ -53,7 +53,7 @@ h1, h2, h4{
 }
 
 .container{
-  max-width: 1296px;
+  max-width: 1320px;
   padding-left: 12px;
   padding-right: 12px;
   margin: 0 auto;
@@ -64,7 +64,7 @@ h1, h2, h4{
   }
   @include phone {
     max-width: 100%;
-    padding-left: 14px;
+    padding-left: 13px;
     padding-right: 14px;
   }
 }  
@@ -116,6 +116,67 @@ h1, h2, h4{
   font-weight: 900;
   font-style: italic;
   color: $primary;
+}
+
+.pageMarginBox{
+  margin: 96px 0 80px 0;
+  @include pad {
+    max-width: 100%;
+    margin: 80px auto;
+  }
+  @include phone {
+    margin-top: 40px;
+    margin-bottom: 64px;
+  }
+}
+
+.pageTitle{
+  border-left: 8px solid $primary-border;
+  padding: 0 16px;
+  color: $black;
+  @include phone {
+    font-size: 24px;
+  }
+}
+
+.shopCard{
+  .shopImgBox{
+    height: 224px;
+    .shopImg{
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .detailBox{
+    border: 1px solid $card-border;
+    .shopName{
+      font-size: $font-size-sm;
+      font-weight: normal;
+      color: $black;
+      border-bottom: 1px solid $card-border;
+      padding: 8px 24px;
+    }
+    .shopDetail{
+      padding: 16px 24px;
+      .shopDetailItem{
+        display: flex;
+        margin-bottom: 8px;
+        &:last-child{
+          margin-bottom: 0;
+        }
+        span{
+          font-size: $font-size-sm;
+          padding: 3px;
+          margin-right: 8px;
+        }
+        a,p{
+          color: $black;
+          font-size: $font-size-xs;
+        }
+      }
+    }
+  }
 }
 
 .hover-up li{
