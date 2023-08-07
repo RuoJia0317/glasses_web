@@ -63,22 +63,15 @@
   width: calc((100% - (24px*2)) / 3);
 
   @include pad{
+    width: calc(100% - (36px * 6) - (24px * 6));
+    margin: 24px auto;
+  }
+  @include phone{
     width: 100%;
-    margin: 24px 0;
   }
   a{
     img{
-      width: 416px;
-      height: 416px;
       margin-bottom: 8px;
-      @include pad{
-        width: 336px;
-        height: 336px;
-      }
-      @include phone {
-        width: 348px;
-        height: 348px;
-      }
     }
 
     h2{
@@ -144,6 +137,8 @@
     border-radius: 4px;
     width: calc((100% - (24px * 3)) / 4);
     margin-top: 48px;
+    display: flex;
+    flex-direction: column;
     @include pad{
       width: calc((100% - 24px) / 2);
     }
@@ -166,12 +161,15 @@
 .contactBox{
   background: $primary-light;
   .contactForm{
-    max-width: 636px;
+    // max-width: 636px;
+    width: calc(100% - (86px * 6) - (24px * 6));
     margin: 48px auto 0 auto;
     @include pad {
+      width: calc(100% - (36px * 2) - (24px * 2));
       padding: 0 14px;
     }
     @include phone {
+      width: 100%;
       margin-top: 24px;
     }
     .contactText{
