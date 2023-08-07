@@ -11,6 +11,9 @@
 
     h1{
       font-size: $font-size-xxl;
+      @include phone {
+        font-size: $font-size-sm;
+      }
     }
 
     .sloganBtn{
